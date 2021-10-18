@@ -2,6 +2,7 @@
 #include "main/hello-greet.h"
 #include <iostream>
 #include <string>
+#include <stdio.h>
 
 int main(int argc, char** argv) {
   std::string who = "world";
@@ -12,6 +13,8 @@ int main(int argc, char** argv) {
   //doing some weird stuff
   char buffer[4];
   buffer[4] = 'a';
+  char buffer[10];
+  char * ret = gets(buffer); // <- Write outside
   print_localtime();
   return 0;
 }
