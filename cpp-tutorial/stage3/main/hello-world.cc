@@ -9,6 +9,9 @@ int main(int argc, char** argv) {
     who = argv[1];
   }
   std::cout << get_greet(who) << std::endl;
+  //doing some weird stuff
+  char buffer[4];
+  buffer[4] = 'a'
   print_localtime();
   return 0;
 }
