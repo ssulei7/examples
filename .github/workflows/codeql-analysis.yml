@@ -60,7 +60,7 @@ jobs:
 
     - name: Analyze Bazel Build
       run: |
-          cd cpp-tutorial/stage1
+          cd cpp-tutorial/stage3
           bazel build //main:hello-world --spawn_strategy=standalone --nouse_action_cache --
 
     - name: Perform CodeQL Analysis
