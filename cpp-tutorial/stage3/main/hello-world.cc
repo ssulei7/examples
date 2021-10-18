@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
   std::cout << get_greet(who) << std::endl;
   //doing some weird stuff
   char buffer[4];
-  buffer[4] = 'a'
+  buffer[4] = 'a';
   print_localtime();
   return 0;
 }
