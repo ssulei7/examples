@@ -62,6 +62,9 @@ jobs:
       run: |
           cd cpp-tutorial/stage3
           bazel build --cxxopt='-std=c++11' //main:hello-world --spawn_strategy=standalone --nouse_action_cache
+          
+    - name: Echo some stufff
+      run: echo whatup
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
